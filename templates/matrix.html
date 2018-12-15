@@ -10,17 +10,17 @@
         <tr>
             <th></th>
             <th></th>
-            {% for ab in range(length_of_s3) %}
+            {% for ab in range1 %}
                  <th>ab</th>
             {% endfor %}
         </tr>
         <tbody>
-            {% for ab in range(length_of_s4) %}
-                <th>s4[ab]</th>
+            {% for ab in range2) %}
+                <th>{{s4[ab]}}</th>
                 <th>ab</th>
                 <tr>
-                   {% for ab in range(length_of_s3) %}
-                       <td>matrix[ab][0]</td>
+                   {% for ab in range1 %}
+                       <td>{{matrix[ab][0]}}</td>
                    {% endfor %} 
                 </tr>
             {% endfor %}

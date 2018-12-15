@@ -89,13 +89,13 @@ def score():
     transitions.append((s2, None, None))
 
     # Output comparison
-    return render_template("score.html", matrix=matrix, s1=s1, s2=s2, operations=transitions)
+    return render_template("score.html", matrix=matrix, s3=s3, s4=s4, range1=range(length_of_s3), range2=range(length_of_s4), operations=transitions)
 
 
 @app.errorhandler(HTTPException)
 def errorhandler(error):
     """Handle errors"""
-    return render_template("error.html", error=error), error.code
+    return render_template("error.html", error=error)
 
 
 # https://github.com/pallets/flask/pull/2314
